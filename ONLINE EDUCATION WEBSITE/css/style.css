@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --greenlight: #75ce4cda;
+    --greendark: #368b0ec9;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background: var(--greendark);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #c1c1c1;
+}
+
+header {
+    width: 96%;
+    background: #fff;
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 100;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin: 0 2rem;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    color:var(--greenlight);
+    transition: .2s;
+}
+
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+    color:var(--greendark);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    color:var(--greenlight);
+    text-transform: uppercase;
+}
+
+header .logo i {
+    color: var(--greendark);
+    padding: 0 .2rem;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: var(--greendark);
+    cursor: pointer;
+
+}
