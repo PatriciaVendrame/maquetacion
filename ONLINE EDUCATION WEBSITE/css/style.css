@@ -437,6 +437,109 @@ header .fa-bars {
     padding: 1rem .2rem;
 }
 
+.contact {
+    background: #333;
+}
+
+.contact .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.contact .row .form-container {
+    width: 50%;
+    
+}
+
+.contact .row .form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .row .form-container input, textarea {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    margin: .3rem 0;
+    color: var(--greendark);
+    font-size: 1.7rem;
+    transition: .2s linear;
+}
+
+.contact .row .form-container textarea {
+    height: 20rem;
+    resize: none;
+}
+
+.contact .row .form-container input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--greenlight);
+    
+}
+
+.contact .row .form-container input[type="submit"] {
+    height: 4.5rem;
+    width: 100%;
+    border-radius: 5rem;
+    background: var(--greendark);
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+    transition: .2s;
+    
+}
+
+.contact .row .form-container input[type="submit"]:hover {
+    background: var(--greenlight);
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .5);
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .icons {
+    padding: 2rem 0;
+}
+
+.footer .icons a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.2rem;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--greendark);
+    border: .2rem solid var(--greendark);
+    font-size: 2rem;
+    margin: 0 .1rem;
+    transition: .2s;
+    
+}
+
+.footer .icons a:hover {
+    background: var(--greendark);
+    color: #fff;
+}
+
+.footer .credit {
+    font-size: 2rem;
+    border-top: .1rem solid #999;
+    color: #666;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 50%;
+    padding: 2rem 0;
+}
+
+.footer .credit span {
+    color: var(--greendark);
+}
+
+
 
 
 
@@ -518,5 +621,10 @@ header .fa-times{
     .course .box-container {
         width: 100%;
         padding: 0;
+    }
+
+    .contact .row .form-container {
+        width: 80%;
+        
     }
 }
