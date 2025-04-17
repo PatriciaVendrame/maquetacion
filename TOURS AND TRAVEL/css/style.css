@@ -49,6 +49,7 @@ header {
     padding: 1rem 2rem;
     border-radius: .5rem;
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    z-index: 1;
 }
 
 .header-active {
@@ -140,6 +141,7 @@ header .fa-bars {
     width: 40rem;
     background-color: var(--quaternary-color);
     border-radius: .5rem;
+    z-index: 2;
 }
 
 .home .form-container form h3 {
@@ -184,7 +186,7 @@ header .fa-bars {
 } */
 
 .feature {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--quaternary-color);
 }
 
@@ -194,7 +196,6 @@ header .fa-bars {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: 2rem 10rem;
 }
 
 .feature .card-container .card {
@@ -215,8 +216,305 @@ header .fa-bars {
     object-fit: cover;
 }
 
+.feature .card-container .content {
+    padding-bottom: 2rem;
+    text-align: center;
+}
 
+.feature .card-container .content .title {
+    color: var(--primary-color);
+    font-size: 3rem;
+}
 
+.feature .card-container .content p {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.feature .card-container .content .stars i {
+    padding: 0 .2rem;
+    font-size: 2rem;
+    color: gold;
+}
+
+.feature .card-container .content .btn {
+    font-size: 1.7rem;
+    margin-top: 1.4rem;
+    height: 3.5rem;
+    width: 12rem;
+    border-radius: .5rem;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.feature .card-container .content .btn:hover {
+    background-color: var(--senary-color);
+    color: var(--tertiary-color);
+}
+
+.feature .card-container .card .discount {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+
+.about {
+    min-height: 100vh;
+}
+
+.about .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 10rem 2rem 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about .row .image img {
+    width: 90%;
+    height: 60%;
+
+}
+
+.about .row .content {
+    width: 30%;
+}
+
+.about .row .content h3 {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.about .row .content p {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.about .row .content .btn {
+    font-size: 2rem;
+    margin-top: 1rem;
+    height: 4rem;
+    width: 18rem;
+    border-radius: .5rem;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .2s linear;
+    margin-right: 2rem;
+}
+
+.about .row .content .btn:hover {
+    background-color: var(--senary-color);
+    color: var(--tertiary-color);
+}
+
+.gallery {
+    min-height: 100vh;
+    background-color: var(--quaternary-color);
+}
+
+.gallery .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery .box-container .box {
+    height: 30rem;
+    width: 50rem;
+    margin: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery .box-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .box .icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, .5));
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.gallery .box-container .box .icons a {
+    color: var(--tertiary-color);
+    font-size: 2rem;
+    padding: 1rem;
+    transition: .2s linear;
+    text-decoration: none;
+}
+
+.gallery .box-container .box .icons a:hover {
+    color: var(--senary-color);
+}
+
+.review {
+    background: url(../img/photographer.jpg), linear-gradient(var(--primary-color), var(--senary-color)) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+.review .heading {
+    color: var(--tertiary-color);
+    padding-bottom: 4rem;
+}
+
+.review .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.review .box-container .box {
+    width: 35rem;
+    margin: 4rem 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.review .box-container .box .image {
+    margin-top: -5rem;
+}
+
+.review .box-container .box .image img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .7rem solid var(--tertiary-color);
+}
+
+.review .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+
+}
+
+.review .box-container .box .content p {
+    font-size: 1.4em;
+    color: var(--secondary-color);
+    padding: .5rem 1.5rem;
+}
+
+.review .box-container .box .stars i {
+    padding: 1rem .1rem;
+    font-size: 2rem;
+    color: var(--senary-color);
+}
+
+.contact .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .row .contact-info {
+    padding: 0 10rem;
+}
+
+.contact .row .contact-info .box {
+    margin: 4rem 2rem;
+}
+
+.contact .row .contact-info .box h3 {
+    font-size: 2rem;
+    color: var(--quinary-color);
+}
+
+.contact .row .contact-info .box h3 i {
+    color: var(--primary-color)
+}
+
+.contact .row .contact-info .box p {
+    padding-left: 3rem;
+    font-size: 1.7rem;
+    color: var(--secondary-color);
+}
+
+.contact .row .contact-form-container {
+    width: 60rem;
+
+}
+
+.contact .row .contact-form-container h3 {
+    font-size: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+    color: var(--primary-color);
+}
+
+.contact .row .contact-form-container form input {
+    outline: none;
+    height: 4rem;
+    width: 100%;
+    background: var(--quaternary-color);
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: .5rem;
+    margin: 0.5rem 0;
+}
+
+.contact .row .contact-form-container form textarea {
+    width: 100%;
+    height: 20%;
+    background: var(--quaternary-color);
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: .5rem;
+    margin: 0.5rem 0;
+    resize: none;
+}
+
+.contact .row .contact-form-container form input[type="submit"] {
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    cursor: pointer;
+    transition: .2s linear;
+    width: 30rem;
+}
+
+.contact .row .contact-form-container form input[type="submit"]:hover {
+    background: var(--senary-color);
+    color: var(--tertiary-color);
+}
 
 
 
@@ -262,6 +560,26 @@ header .fa-bars {
         padding-left: 0;
         border-left: none;
         color: var(--secondary-color);
+    }
+
+    .about .row .content h3 {
+        font-size: 2rem;
+        color: var(--primary-color);
+    }
+
+    
+    .about .row {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .about .row .image {
+        width: 70%;
+        height: 50%;
+        padding: 0;
+    }
+    .about .row .content p {
+        font-size: 1.2rem;
     }
     
 }
@@ -321,6 +639,37 @@ header .fa-bars {
         align-items: center;
 
     }
+
+    .about .row {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    .about .row .image {
+        text-align: center;
+    }
+
+    .about .row .content {
+        width: 80%;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .about .row .content p {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .contact .row {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .contact .row .contact-form-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -331,5 +680,16 @@ header .fa-bars {
     .home .form-container form{
         width: 100%;
         margin: 3rem 0;
+    }
+
+    .contact .row .contact-form-container form input {
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+
+    .contact .row .contact-form-container form input[type="submit"] {
+        margin: 1rem 0;
+        width: 100%;
     }
 }
