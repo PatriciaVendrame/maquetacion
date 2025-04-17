@@ -760,6 +760,7 @@ header .fa-bars {
     .contact .row {
         flex-flow: column;
         align-items: flex-start;
+        margin-bottom: 5rem;
     }
 
     .contact .row .contact-form-container {
