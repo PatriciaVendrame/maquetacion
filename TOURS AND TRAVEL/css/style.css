@@ -443,6 +443,7 @@ header .fa-bars {
     justify-content: center;
     align-items: center;
     background-color: var(--tertiary-color);
+    margin-bottom: 2rem;
 }
 
 .contact .row .contact-info {
@@ -583,6 +584,7 @@ header .fa-bars {
     justify-content: space-between;
     padding: 2rem;
     background: #222;
+    
 }
 
 .footer .credit {
@@ -601,6 +603,7 @@ header .fa-bars {
     line-height: 4rem;
     color: var(--tertiary-color);
     transition: .2s linear;
+    text-decoration: none;
 }
 
 .footer .icons a:hover {
